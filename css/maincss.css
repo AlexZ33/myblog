@@ -12,6 +12,23 @@ background: transparent;
 	height: 700px;
 
 }
+
+
+.article #banner{
+
+	height: 300px;
+}
+.article h1{
+	border: none;
+}
+
+ h1,
+ .main-wrapper p,
+.article #banner p
+{
+	color: #fff;
+
+}
 ul{
 	margin:0;
 }
@@ -53,6 +70,10 @@ nav .logo{
 	position: relative;
 	top:160px;
 }
+
+.article #banner .inner{
+	top:30px;
+}
 #banner .inner h1{
 	margin:0;
 
@@ -91,6 +112,8 @@ button{
 
 
 }
+
+.article .hr{display: none}
 .green-section{
 	text-align: center;
 	background: #089db0;
@@ -109,7 +132,8 @@ button{
 	width: 80px;
 	height: 80px;
 	background: #eee;
-	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	        transform:rotate(45deg);
 	margin:20px;
 
 
@@ -206,9 +230,15 @@ button{
 .card-group{
 	width: 1080px;
 	
+	display: -webkit-box;
+	
+	display: -ms-flexbox;
+	
 	display: flex;
-	flex-flow:row wrap;
-	align-content:flex-start;
+	-ms-flex-flow:row wrap;
+	    flex-flow:row wrap;
+	-ms-flex-line-pack:start;
+	    align-content:flex-start;
 }
 
 .card{
@@ -217,7 +247,13 @@ button{
 	-moz-box-sizing:border-box;
 
 	
-	flex:0 0 30%;
+	-webkit-box-flex:0;
+
+	
+	    -ms-flex:0 0 30%;
+
+	
+	        flex:0 0 30%;
 	min-height: 360px;
 	// border:1px solid white;
 	padding: 10px;
@@ -280,7 +316,10 @@ ul .share-group{
 #sidebar{
 	position: fixed;
 	top:0;
-	right: -300px;
+	/*right: -300px;*/
+	-webkit-transform:translate(300px,0);
+	        transform:translate(300px,0);
+	right:0;
 	bottom: 0;
 
 	width: 300px;
@@ -288,6 +327,7 @@ ul .share-group{
 	color: #fff;
 
 	padding:20px 0;
+	transition: all 0.5s;
 	
 
 }
@@ -318,4 +358,23 @@ ul .share-group{
 	border:1px solid #888;
 	
 
+}
+
+.content .content_wrapper{
+	width: 1000px;
+	margin:0 auto;
+}
+
+.article .content{
+	background: #fefefe;
+}
+
+article{
+	line-height: 2;
+	padding: 15px 0;
+}
+.article_info{
+	font-size:14px; 
+	color: #888;
+	padding: 15px 0;
 }

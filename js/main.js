@@ -37,7 +37,7 @@
 	function showSidebar()
 	{
 		mask.fadeIn();
-		sidebar.animate({'right': '0px'}, 'slow');
+		sidebar.css('transform','translate(0,0)');
 	}
 
 	
@@ -45,7 +45,7 @@
 	function hideSidebar()
 	{
 		mask.fadeOut();
-		sidebar.animate({'right':-sidebar.width()}, 'slow');
+		sidebar.css('transform','translate('+ sidebar.width() +'px'+',0)');
 	}
         
 	
