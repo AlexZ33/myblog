@@ -6,7 +6,8 @@
 	var mask = $('.mask');
 	var sidebar = $('#sidebar');
 	var backButton = $('.back-to-top');
-	
+	var content = $('.block-content');
+
 	sidebar_trigger.on('click',showSidebar);
     mask.on('click',hideSidebar);
     
@@ -17,8 +18,11 @@
     	},800);
 
     });
-	
-	
+
+
+
+
+
 
 	$(window).on('scroll',function()
 	{

@@ -12,7 +12,9 @@ background: transparent;
 	height: 700px;
 
 }
-
+.article{
+	position: relative;
+}
 
 .article #banner{
 
@@ -377,4 +379,20 @@ article{
 	font-size:14px; 
 	color: #888;
 	padding: 15px 0;
+}
+.block-content{
+	display: block;	
+}
+.aside-nav {
+    background-color: #ebebeb;
+    position: absolute;
+    top: 420px;
+    left: 10px;
+    width: 200px;
+    height: 150px;
+
+}
+ul, ol {
+    list-style: none outside none;
+
 }
